@@ -1,0 +1,47 @@
+.aside .body-right {
+  width: 20%;
+  margin-top: 20px;
+}
+
+.aside {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.aside .item {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.aside .item .body {
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+aside .item .body .title {
+  font-size: 1.2rem;
+}
+
+.aside .item .body .view {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.aside .item .body .like {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aside .action {
+  display: flex;
+  margin: 0 !important;
+}

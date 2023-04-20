@@ -1,0 +1,23 @@
+.topsearch {
+  padding: 20px 0;
+}
+
+.topsearch .list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.topsearch .list li a {
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.topsearch .list li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}

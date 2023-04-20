@@ -1,0 +1,121 @@
+.header .body ul {
+  list-style: none;
+  display: flex;
+  color: var(--coler-primary);
+  font-size: 1.6rem;
+}
+.header .body ul li,
+.menu-item {
+  list-style: none;
+  display: flex;
+  padding: 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  gap: 5px;
+  align-items: center;
+  color: #ffff;
+}
+
+.header .nav ul li {
+  position: relative;
+}
+
+.header .nav ul ul {
+  z-index: 2;
+}
+
+.menu-item p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sub-menu {
+  position: absolute;
+  top: 140%;
+  left: 0px;
+  border-top: 3px solid var(--heading-color);
+  /* flex-direction: column; */
+  background-color: #32373c;
+  padding: 10px;
+  border-radius: 2px;
+  gap: 20px;
+  display: grid !important;
+  grid-template-columns: auto auto auto;
+  width: max-content;
+}
+
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--heading-color);
+  z-index: -1;
+}
+
+.sub-menu::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.sub-menu li {
+  font-size: 1.2rem;
+  width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #32373c;
+    height: 100vh;
+  }
+
+  .nav.show {
+    display: block;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  .header .body ul li {
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sub-menu {
+    position: static;
+    margin-top: 10px;
+    width: 100% !important;
+    grid-template-columns: auto;
+    gap: 10px;
+    list-style-type: circle !important;
+  }
+
+  .sub-menu::after,
+  .sub-menu::before {
+    display: none;
+  }
+  .sub-menu li {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+.menu-item:hover {
+  color: var(--heading-color);
+}

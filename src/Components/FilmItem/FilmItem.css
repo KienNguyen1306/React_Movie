@@ -1,0 +1,123 @@
+.item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.item .image {
+  object-fit: cover;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  border-bottom-right-radius: 5px;
+  padding: 2px 5px;
+}
+
+.view-main {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 5px;
+  padding: 2px 5px;
+  border-bottom-left-radius: 5px;
+  background-color: beige;
+  color: black;
+}
+.image-main {
+  position: relative;
+}
+.play {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s linear;
+}
+
+.item:hover .icon-play {
+  opacity: 0.4;
+  transform: scale(1);
+}
+
+.icon-play {
+  font-size: 6rem;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-view {
+  color: black;
+}
+
+.title {
+  font-size: 1.4rem;
+}
+
+.item.style-item {
+  flex-direction: row;
+}
+
+.item.style-item .view-main {
+  position: static;
+}
+.item .main-image {
+  height: 335px;
+  display: block;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+.item.style-item .main-image {
+  width: 100px;
+  height: 70px;
+  display: block;
+  margin-bottom: 0;
+}
+.item.style-item .title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item.style-item .title p {
+  display: -webkit-box !important;
+  -webkit-line-clamp: var(--line-camp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* max-width: 990px; */
+@media only screen and (max-width: 61.875em) {
+  .item .main-image {
+    height: 250px;
+  }
+}
+/* max-width: 768px; */
+@media only screen and (max-width: 48em) {
+  .item .main-image {
+    height: 220px;
+  }
+}
+
+/* max-width: 470px; */
+@media only screen and (max-width: 29.375em) {
+  .item .main-image {
+    height: 200px;
+  }
+}

@@ -1,0 +1,19 @@
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-scrolltop {
+  color: red;
+}

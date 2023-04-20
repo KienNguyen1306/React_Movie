@@ -1,0 +1,48 @@
+.footer {
+  padding: 30px 0;
+  background-color: var(--background);
+}
+
+.footer .header {
+  font-size: 2rem;
+  z-index: 0;
+  padding: 8px 0;
+}
+.footer .title {
+  color: var(--coler-primary);
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 10px 0;
+}
+
+.footer .heading {
+  font-size: 1.6rem;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  border-bottom: 2px solid var(--heading-color);
+  padding: 10px 0;
+}
+
+.footer .body ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.footer .body li {
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.footer .body li a {
+  color: #ccc;
+}
+
+.Copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 40px;
+}

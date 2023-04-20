@@ -1,0 +1,39 @@
+.mainslider {
+  margin-top: 30px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+.slick-prev,
+.slick-next {
+  width: auto;
+  height: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 4rem;
+}
+
+.slick-prev {
+  left: 20px;
+  z-index: 2;
+}
+.slick-dots {
+  display: none !important;
+}
+
+/* max-width: 470px; */
+@media only screen and (max-width: 29.375em) {
+  .slick-prev,
+  .slick-next {
+    display: none !important ;
+  }
+}

@@ -1,0 +1,142 @@
+#comment {
+  margin-top: 100px;
+}
+
+#comment .comment-controll {
+  position: relative;
+}
+
+#comment .comment-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+#comment .comment-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#comment .comment-controll textarea {
+  width: 100%;
+  padding: 12px 12px 12px 52px;
+  border-radius: 5px;
+  min-height: 5rem;
+  font-size: 1.4rem;
+  line-height: 1.33;
+  border-radius: 0.5rem;
+  color: #718096;
+  border: 2px solid #e2e8f0;
+  outline: none;
+  resize: vertical;
+}
+
+#comment .submit {
+  margin-top: 10px;
+  text-align: right;
+  margin-left: auto;
+}
+
+#comment .submit button {
+  display: inline-block;
+  color: #718096;
+  background-color: #e2e8f0;
+  padding: 4px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#comment .title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#comment .item-body {
+  display: flex;
+  margin-top: 15px;
+}
+
+#comment .item-body-avatar {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#comment .item-body-avatar img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comments__section--user {
+  font-weight: 500;
+  color: var(--heading-color);
+  margin-right: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.comments__section--time {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.comments__section--time::before {
+  content: " - ";
+}
+
+.comments__section--text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.2;
+}
+
+#comment .item + .item {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+#comment .action {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 10px 10px 50px;
+}
+
+#comment .action span {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.body-comment .send-comment {
+  margin-left: 50px;
+}
+
+.body-comment .comment-form {
+  margin: 40px 0 0 50px;
+}
+
+.item-body-comment {
+  flex: 1;
+}
+
+.click-login {
+  cursor: pointer;
+}
+
+.More-Comment {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 8px 10px;
+  background-color: #718096;
+  border-radius: 5px;
+}

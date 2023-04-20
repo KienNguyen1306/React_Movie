@@ -1,0 +1,97 @@
+.watchingtv {
+  padding: 20px 0px;
+}
+
+.watchingtv .body {
+  display: flex;
+  gap: 20px;
+}
+.watchingtv .left {
+  flex: 1;
+  width: 100%;
+}
+
+.watchingtv .right {
+  width: 20%;
+}
+
+.watchingtv .video {
+  width: 100%;
+  height: 80vh;
+}
+.watchingtv .action {
+  margin: 20px 0;
+}
+.watchingtv .action,
+.watchingtv .action .left,
+.watchingtv .action .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.watchingtv .action .left {
+  justify-content: flex-start;
+  gap: 10px;
+}
+.watchingtv .action .left div,
+.watchingtv .action .right div {
+  background-color: #252525;
+  padding: 5px 5px 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #2d3c50;
+  font-size: 1.4rem;
+}
+
+.watchingtv .action .right {
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.watchingtv .block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchingtv .icon-view {
+  color: white;
+}
+
+.watchingtv .name {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.watchingtv .title {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.seemore {
+  font-size: 1.3rem;
+  color: var(--heading-color);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .watchingtv .body {
+    flex-direction: column;
+  }
+  .watchingtv .right {
+    width: 100%;
+  }
+  .watchingtv .video {
+    width: 100%;
+    height: 30vh;
+  }
+  .watchingtv .action {
+    display: block;
+  }
+  .watchingtv .action .right {
+    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+.btn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 2px;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  border: 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.btn-default {
+  color: #718096;
+  background-color: #e2e8f0;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #717171;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #5a67d8;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #717171;
+}
+.btn-category {
+  background-color: #e9d8fd;
+  color: rgba(0, 0, 0, 0.4);
+}
+.btn-category:hover {
+  color: #e2e8f0;
+  background-color: #718096;
+}
+.btn-size-large {
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  border-radius: 9999px;
+}
+.btn svg {
+  height: 1em;
+}
+
+.btn.btn-default-login.with-100 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+  height: 35px;
+}
+.btn.btn-default-cancel.with-100 {
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #1d1d1f;
+  color: #fff;
+}
+
+.btn.travel {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  padding: 10px 15px;
+}
+.btn.travel.poiter-events {
+  pointer-events: none;
+}
+
+.btn.watch {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  padding: 10px 15px;
+}
+
+.btn.smoll {
+  margin: 5px;
+  padding: 7px;
+  background: #3a3a3a;
+  color: #fdfdfd;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,32 @@
+.item-loading {
+  width: 100%;
+  height: 355px;
+  background-color: #fff;
+
+  border-radius: 5px;
+  position: relative;
+}
+
+.item-loading::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ccc, #fff);
+  animation: toRight 1s infinite alternate;
+}
+
+.item-loading.smoll {
+  height: 70px;
+}
+@keyframes toRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

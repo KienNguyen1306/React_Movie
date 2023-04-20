@@ -1,0 +1,30 @@
+.heading-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--heading-color);
+  padding: 5px 0;
+}
+.heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--heading-color);
+  text-transform: uppercase;
+}
+
+.heading.heading-default {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: white;
+}
+
+.heading.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.heading.heDetai {
+  border-bottom: none;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}

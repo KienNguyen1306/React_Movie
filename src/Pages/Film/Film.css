@@ -1,0 +1,30 @@
+.filte_film {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.filte_film select {
+  width: max-content;
+}
+
+.popupClassName {
+  max-height: 700px;
+}
+
+/* max-width: 990px; */
+@media only screen and (max-width: 61.875em) {
+}
+/* max-width: 768px; */
+@media only screen and (max-width: 48em) {
+}
+
+/* max-width: 470px; */
+@media only screen and (max-width: 29.375em) {
+}
+
+/* max-width: 250px; */
+@media only screen and (max-width: 16.25em) {
+}

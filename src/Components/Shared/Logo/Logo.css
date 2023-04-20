@@ -1,0 +1,13 @@
+.logo {
+  color: var(--coler-primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  width: 30px;
+}
+.logo span {
+  margin-top: 5px;
+}
