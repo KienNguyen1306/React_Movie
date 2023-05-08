@@ -1,4 +1,4 @@
-import { BiMap } from "react-icons/bi";
+
 
 function Contactinfo(props) {
   let { icon, title, des } = props;
