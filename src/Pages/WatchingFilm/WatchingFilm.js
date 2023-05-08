@@ -24,9 +24,9 @@ function WatchingFilm() {
   let dispatch = useDispatch();
   useEffect(() => {
     dispatch(actDetailFilmAsync(id)).then(() => {
-      setlinkVideo(
-        `https://2embed.org/embed/movie?imdb=${detailFilm.imdb_id}&language=vi`
-      );
+      // setlinkVideo(
+      //   `https://2embed.org/embed/movie?imdb=${detailFilm.imdb_id}&language=vi`
+      // );
     });
   }, [detailFilm.imdb_id, dispatch, id]);
   if (Object.keys(detailFilm).length === 0) {
