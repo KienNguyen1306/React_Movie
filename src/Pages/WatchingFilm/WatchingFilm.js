@@ -25,10 +25,11 @@ function WatchingFilm() {
   useEffect(() => {
     dispatch(actDetailFilmAsync(id)).then(() => {
       setlinkVideo(
-        `https://2embed.org/embed/movie?imdb=${detailFilm.imdb_id}&language=vi`
+        `https://www.2embed.cc/embed/movie?imdb=${detailFilm.imdb_id}&language=vi`
       );
     });
   }, [detailFilm.imdb_id, dispatch, id]);
+  
   if (Object.keys(detailFilm).length === 0) {
     return <></>;
   }
